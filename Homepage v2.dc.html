@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mr Levi's Legacy — It's all about HEART</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Karla:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FFFFFF; color: #3D4A55; font-family: 'Karla', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0E4478; text-decoration: none; }
+  a:hover { color: #C99A45; }
+  img { display: block; }
+  input::placeholder { color: #98A5AE; }
+</style>
+</helmet>
+
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:40; background:#F8F3EB;">
+    <div style="max-width:1500px; margin:0 auto; padding:14px clamp(20px,3vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 32px;">
+      <a href="Homepage v2.dc.html" style="display:block;"><img src="assets/fig-logo.png" alt="Mr Levi's Legacy — All About Heart" style="height:96px; width:auto;" /></a>
+      <nav style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; font-size:16px; font-family:'Karla',sans-serif;">
+        <a href="HEART Framework v2.dc.html" style="padding:14px 26px; border-radius:999px; box-shadow:inset 0 0 0 1px rgba(212,166,78,0.45); color:#0A2E52;" style-hover="box-shadow:inset 0 0 0 1px #C99A45">Heart™</a>
+        <a href="#story" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">About</a>
+        <a href="Resources v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Resources</a>
+        <a href="Blog v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Blog</a>
+        <a href="#join" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Contact</a>
+        <a href="#join" style="margin-left:6px; padding:15px 24px; border-radius:999px; background:#0E4478; color:#FFFFFF; font-weight:500;" style-hover="background:#0A2E52">Join us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="position:relative; min-height:clamp(460px,44vw,846px); display:flex; align-items:center; overflow:hidden; background:#0A2E52;">
+    <img src="assets/fig-home-hero.jpg" alt="Mr Levi on the sand" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:60% 45%;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(10,46,82,0.86) 0%, rgba(10,46,82,0.62) 42%, rgba(255,255,255,0.05) 78%, rgba(255,255,255,0.55) 100%);"></div>
+    <div style="position:relative; width:100%; max-width:1500px; margin:0 auto; padding:clamp(48px,5vw,90px) clamp(20px,3vw,40px);">
+      <div style="max-width:640px; display:flex; flex-direction:column; gap:22px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:20px; letter-spacing:4px; text-transform:uppercase; color:#E4C791; line-height:1.6;">Mr Levi's Legacy™</span>
+        <h1 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(34px,4.2vw,52px); line-height:1.16; color:#FFFFFF; text-wrap:pretty;">Wherever you are on the journey, <em style="font-style:italic;">you're welcome here.</em></h1>
+        <p style="margin:0; font-size:17px; line-height:1.65; color:#E7EDF3; max-width:430px; text-wrap:pretty;">Compassionate education and support for companion animals and the people who love them.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:8px;">
+          <a href="HEART Framework v2.dc.html" style="display:inline-flex; align-items:center; gap:10px; background:#C99A45; color:#3A2A0C; border-radius:999px; padding:19px 31px; font-weight:600; font-size:15.5px; letter-spacing:0.155px;" style-hover="background:#D9A85D">Explore HEART™ →</a>
+          <a href="#join" style="display:inline-flex; align-items:center; background:rgba(255,255,255,0.24); box-shadow:inset 0 0 0 1px rgb(194,194,194); color:#FFFFFF; border-radius:999px; padding:19px 31px; font-weight:600; font-size:15.5px;" style-hover="background:rgba(255,255,255,0.36)">Join our community</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" style="background:#FBF8F2; padding:clamp(60px,7vw,150px) clamp(20px,3vw,40px) clamp(50px,6vw,90px);">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:clamp(32px,4vw,64px); align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:24px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:17.5px; letter-spacing:3.5px; text-transform:uppercase; color:#63727D;">It's all about HEART</span>
+          <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        </div>
+        <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; text-wrap:pretty;">A gentle place for anyone who loves a companion animal.</h2>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#63727D; text-wrap:pretty;">Whether you're welcoming a new arrival, savouring the good years, caring for a changing or ageing friend, facing difficult days, or holding a beloved memory close there is something here for you.</p>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#63727D; text-wrap:pretty;">Everything we create grows from one simple belief: that caring for a companion animal is not a series of isolated moments, but <strong style="font-weight:600; color:#0A2E52;">a lifelong relationship that deserves compassion at every stage</strong>. That belief has a name, the HEART™ Companion Animal Care Framework and it is the heart of all we do.</p>
+        <blockquote style="margin:16px 0 0; padding:3px 0 3px 24px; border-left:2px solid #C99A45;">
+          <p style="margin:0; font-family:'Fraunces',serif; font-style:italic; font-weight:400; font-size:20px; line-height:1.55; color:#0E4478; text-wrap:pretty;">It began with one small dog named Levi, who quietly became my greatest teacher. This is his legacy and a place we hope will become a trusted companion to you, wherever your journey leads.</p>
+        </blockquote>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:22px; justify-self:center;">
+        <img src="assets/fig-roundel.png" alt="Illustrated portrait of Mr Levi, a miniature schnauzer, on a gold roundel" style="width:100%; max-width:309px; height:auto;" />
+        <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:2px; text-transform:uppercase; color:#63727D;">Mr Levi</span>
+      </div>
+    </div>
+
+    <div style="max-width:1084px; margin:clamp(48px,5vw,80px) auto 0; display:flex; flex-direction:column; align-items:center; gap:clamp(32px,4vw,58px);">
+      <img src="assets/fig-logo.png" alt="" style="height:96px; width:auto; opacity:0.95;" />
+      <div style="width:100%; background:#FFFFFF; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07); padding:clamp(30px,3.4vw,52px); display:grid; grid-template-columns:190px 1fr; gap:clamp(28px,3.6vw,54px); align-items:center;">
+        <div style="width:190px; height:253px; border-radius:10px; background:linear-gradient(154.942deg, #0E4478 0%, #0A2E52 100%); box-shadow:inset 0 0 0 1px rgba(255,255,255,0.12), 0 18px 40px rgba(10,46,82,0.28); padding:25px 19px; display:flex; flex-direction:column; justify-content:space-between;">
+          <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:9.5px; letter-spacing:1.9px; text-transform:uppercase; color:#E4C791;">Free guide</span>
+          <span style="font-family:'Fraunces',serif; font-weight:400; font-size:21px; line-height:1.18; color:#FFFFFF; text-wrap:pretty;">The HEART Companion Reflection</span>
+          <img src="assets/fig-flourish.png" alt="" style="width:34px; height:auto; opacity:0.85;" />
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Free to download</span>
+            <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+          </div>
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(26px,2.7vw,34px); line-height:1.14; letter-spacing:-0.408px; color:#0A2E52; text-wrap:pretty;">A gentle reflection on the bond you share, at every stage of the journey</h3>
+          <p style="margin:0; font-size:17px; line-height:1.65; color:#63727D; text-wrap:pretty;">A short, plain-language guide to noticing how your companion is really doing, with a simple checklist you can return to whenever things change.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:6px;">
+            <input type="email" placeholder="Your email address" style="flex:1; min-width:260px; height:51px; padding:0 21px; border:none; border-radius:999px; background:#FBF8F2; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.2); font-family:'Karla',sans-serif; font-size:16px; color:#0A2E52;" />
+            <button type="button" style="height:51px; padding:0 31px; border:none; border-radius:999px; background:#0E4478; color:#FFFFFF; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; cursor:pointer;" style-hover="background:#0A2E52">Send me the guide</button>
+          </div>
+          <span style="font-size:13.5px; color:#63727D;">No spam, ever. Unsubscribe any time.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative; padding:clamp(60px,7vw,116px) clamp(20px,3vw,40px) clamp(60px,7vw,110px); overflow:hidden; background:#0C3660;">
+    <img src="assets/fig-band-bg.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
+    <div style="position:absolute; inset:0; background:rgba(12,54,96,0.93);"></div>
+    <div style="position:relative; max-width:1084px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:clamp(30px,3.4vw,52px);">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:64px; height:1px; background:#FFFFFF; opacity:0.45;"></span>
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#FFFFFF;">Find your way</span>
+        <span style="width:64px; height:1px; background:#FFFFFF; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#FFFFFF; text-align:center; text-wrap:pretty;">Where would you like to begin?</h2>
+      <div style="width:100%; display:grid; grid-template-columns:repeat(auto-fit, minmax(290px,1fr)); gap:26px;">
+        <a href="HEART Framework v2.dc.html" style="background:#FFFFFF; border-radius:18px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.08), 0 7px 45.6px rgba(0,0,0,0.22); padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#0A2E52;">HEART™</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#63727D; text-wrap:pretty;">The framework at the heart of everything we do, the five HEART Hubs, one for every stage of the journey.</p>
+          <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; color:#0E4478;">Explore HEART™ →</span>
+        </a>
+        <a href="Resources v2.dc.html" style="background:#FFFFFF; border-radius:18px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.08), 0 7px 45.6px rgba(0,0,0,0.22); padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#0A2E52;">Resources</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#63727D; text-wrap:pretty;">Free guides, checklists and gentle tools to support you and your companion, with premium resources on the way.</p>
+          <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; color:#0E4478;">Browse resources →</span>
+        </a>
+        <a href="Blog v2.dc.html" style="background:#FFFFFF; border-radius:18px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.08), 0 7px 45.6px rgba(0,0,0,0.22); padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#0A2E52;">Blog</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#63727D; text-wrap:pretty;">Stories, reflections and practical guidance, thoughtfully organised around HEART™.</p>
+          <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; color:#0E4478;">Read the blog →</span>
+        </a>
+        <a href="#story" style="background:#FFFFFF; border-radius:18px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.08), 0 7px 45.6px rgba(0,0,0,0.22); padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#0A2E52;">About Levi</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#63727D; text-wrap:pretty;">Meet Mr Levi and hear how one small schnauzer quietly inspired all of this.</p>
+          <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; color:#0E4478;">Read his story →</span>
+        </a>
+        <a href="#join" style="background:#FFFFFF; border-radius:18px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.08), 0 7px 45.6px rgba(0,0,0,0.22); padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#0A2E52;">Contact</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#63727D; text-wrap:pretty;">A question, or simply a space that understands? You're always welcome to reach out.</p>
+          <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; color:#0E4478;">Get in touch →</span>
+        </a>
+        <div style="background:#0A2E52; border-radius:18px; outline:1px dashed rgba(255,255,255,0.47); outline-offset:-1px; padding:33px 29px; display:flex; flex-direction:column; gap:16px;">
+          <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; letter-spacing:-0.264px; color:#FFFFFF;">Shop</h3>
+          <p style="margin:0; flex:1; font-size:16px; line-height:1.62; color:#B3BDC4; text-wrap:pretty;">Premium guides, tools and courses to support you and your companion through every stage.</p>
+          <span style="align-self:flex-start; padding:8px 13px; border-radius:999px; box-shadow:inset 0 0 0 1px rgba(201,154,69,0.5); font-family:'Karla',sans-serif; font-weight:700; font-size:11px; letter-spacing:1.54px; text-transform:uppercase; color:#C99A45;">Coming soon</span>
+        </div>
+      </div>
+      <p style="margin:8px 0 0; font-size:16px; color:#FFFFFF;">Looking for a quick answer? <a href="#join" style="color:#FFFFFF; border-bottom:1px solid rgba(255,255,255,0.4);" style-hover="color:#E4C791">Visit our FAQ.</a></p>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(56px,6vw,106px) clamp(20px,3vw,40px) clamp(60px,7vw,110px);">
+    <div style="max-width:1084px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(30px,3.4vw,50px);">
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Every companion, every stage</span>
+          <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        </div>
+        <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; max-width:640px; text-wrap:pretty;">The small, ordinary moments are the ones we keep.</h2>
+        <p style="margin:0; font-size:17px; line-height:1.65; color:#63727D; max-width:620px; text-wrap:pretty;">Muddy paws, sunny windowsills, the walk you've done a thousand times. This is what we're here to help you protect, and one day, to help you remember.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:clamp(96px,9.4vw,170px); gap:14px;">
+        <img src="assets/fig-g2.jpg" alt="Mr Levi on white sand at the edge of clear turquoise water" style="grid-column:span 2; grid-row:span 2; width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g3.jpg" alt="Levi peeking through the verandah railings" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g5.jpg" alt="Levi in the garden" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g12.jpg" alt="Levi resting" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g1.jpg" alt="Levi on the sand" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g8.jpg" alt="Levi and friends on the grass" style="grid-column:span 2; width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g10.jpg" alt="A rabbit in the grass" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g9.jpg" alt="Levi trotting across the grass" style="width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g7.jpg" alt="A cattle dog and a puppy" style="grid-row:span 2; width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g11.jpg" alt="Jo, Levi and friend" style="grid-row:span 2; width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+        <img src="assets/fig-g6.jpg" alt="A cat and a schnauzer asleep together" style="grid-column:span 2; grid-row:span 2; width:100%; height:100%; object-fit:cover; border-radius:14px;" />
+      </div>
+      <p style="margin:0; text-align:center; font-family:'Fraunces',serif; font-style:italic; font-size:15px; line-height:1.65; color:#63727D;">Dogs, cats, birds, rabbits, horses - every companion belongs here.</p>
+    </div>
+  </section>
+
+  <section style="background:#FFFFFF; padding:clamp(60px,7vw,116px) clamp(20px,3vw,40px);">
+    <div style="max-width:724px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:30px;">
+      <img src="assets/fig-logo.png" alt="" style="height:88px; width:auto;" />
+      <p style="margin:0; text-align:center; font-family:'Fraunces',serif; font-weight:300; font-size:clamp(26px,3.1vw,38px); line-height:1.36; letter-spacing:-0.57px; color:#0A2E52; text-wrap:pretty;">Because every companion animal deserves to be cared for with compassion, dignity and love, and <em style="font-style:italic;">every person who loves them deserves to feel supported along the way.</em></p>
+    </div>
+  </section>
+
+  <section id="join" style="background:#EDF1F5; padding:clamp(56px,6vw,116px) clamp(20px,3vw,40px);">
+    <div style="max-width:1084px; margin:0 auto; background:#FFFFFF; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07); padding:clamp(46px,5.4vw,84px) clamp(24px,4vw,60px); display:flex; flex-direction:column; align-items:center; gap:20px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Join us</span>
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; text-align:center;">Walk beside us.</h2>
+      <p style="margin:0; max-width:520px; text-align:center; font-size:17px; line-height:1.65; color:#63727D; text-wrap:pretty;">Join our email community for gentle guidance, new resources and compassionate support, sent with care, whenever you need it.</p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px; width:100%; max-width:540px;">
+        <input type="email" placeholder="Your email address" style="flex:1; min-width:260px; height:51px; padding:0 21px; border:none; border-radius:999px; background:#FBF8F2; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.2); font-family:'Karla',sans-serif; font-size:16px; color:#0A2E52;" />
+        <button type="button" style="height:51px; padding:0 31px; border:none; border-radius:999px; background:#C99A45; color:#3A2A0C; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; cursor:pointer;" style-hover="background:#D9A85D">Join us</button>
+      </div>
+      <span style="font-size:13.5px; color:#63727D;">We'll only ever send things we'd want to receive ourselves.</span>
+    </div>
+  </section>
+
+  <footer style="background:#0A2E52; padding:clamp(52px,5vw,79px) clamp(20px,3vw,40px) 40px;">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:40px;">
+      <div><img src="assets/fig-roundel.png" alt="Mr Levi" style="width:152px; height:auto;" /></div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">HEART Hub</span>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Home &amp; Belonging</a>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Enrichment &amp; Living Well</a>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Ageing, Adaptation &amp; Advocacy</a>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Reflection, Remembrance &amp; Returning</a>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Together, Through Every Stage</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Explore</span>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">The HEART™ Framework</a>
+        <a href="Resources v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Resources</a>
+        <a href="Blog v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Blog</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Shop (soon)</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Connect</span>
+        <a href="#story" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">About Mr Levi</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Contact</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">FAQ</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Join the community</a>
+      </div>
+    </div>
+    <div style="max-width:1084px; margin:clamp(40px,4vw,72px) auto 0; padding-top:28px; border-top:1px solid rgba(255,255,255,0.13); display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; font-size:13.5px;">
+      <span style="color:rgba(255,255,255,0.45);">© 2026 Mr Levi's Legacy™. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.55);">Privacy · Terms · Made with heart by Creative Feed</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}"></script>
+</body>
+</html>

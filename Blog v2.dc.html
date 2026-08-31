@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Blog — Mr Levi's Legacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Karla:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FAF6EF; color: #3D4A55; font-family: 'Karla', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0E4478; text-decoration: none; }
+  a:hover { color: #C99A45; }
+  img { display: block; }
+  input::placeholder { color: #98A5AE; }
+</style>
+</helmet>
+
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:40; background:#F8F3EB;">
+    <div style="max-width:1500px; margin:0 auto; padding:14px clamp(20px,3vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 32px;">
+      <a href="Homepage v2.dc.html" style="display:block;"><img src="assets/fig-logo.png" alt="Mr Levi's Legacy — All About Heart" style="height:96px; width:auto;" /></a>
+      <nav style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; font-size:16px; font-family:'Karla',sans-serif;">
+        <a href="HEART Framework v2.dc.html" style="padding:14px 26px; border-radius:999px; box-shadow:inset 0 0 0 1px rgba(212,166,78,0.45); color:#0A2E52;" style-hover="box-shadow:inset 0 0 0 1px #C99A45">Heart™</a>
+        <a href="Homepage v2.dc.html#story" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">About</a>
+        <a href="Resources v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Resources</a>
+        <a href="#top" style="padding:14px 18px; color:#0E4478; font-weight:600;">Blog</a>
+        <a href="#join" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Contact</a>
+        <a href="#join" style="margin-left:6px; padding:15px 24px; border-radius:999px; background:#0E4478; color:#FFFFFF; font-weight:500;" style-hover="background:#0A2E52">Join us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative; padding:clamp(56px,6vw,110px) clamp(20px,3vw,40px) clamp(60px,7vw,120px); overflow:hidden; background:#0C3660;">
+    <img src="assets/fig-hero-bg.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 48%; opacity:0.22;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,68,127,0.92) 0%, rgba(12,54,96,0.96) 100%);"></div>
+    <div style="position:relative; max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:20px;">
+      <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:13px; letter-spacing:2.86px; text-transform:uppercase; color:#E3BE7C;">Words &amp; guidance</span>
+      <h1 style="margin:0; font-family:'Newsreader',serif; font-weight:400; font-size:clamp(36px,4.8vw,68px); line-height:1.08; color:#FFFFFF;">The Blog</h1>
+      <span style="width:72px; height:1px; background:#C79449; margin:4px 0;"></span>
+      <p style="margin:0; font-family:'Newsreader',serif; font-style:italic; font-size:clamp(18px,2.1vw,25px); line-height:1.55; color:#EFE3CB; max-width:660px; text-wrap:pretty;">Practical, gentle writing for every stage of life together — sorted by the five letters of the HEART™ Framework.</p>
+    </div>
+  </section>
+
+  <section style="background:#FAF6EF; padding:clamp(44px,5vw,72px) clamp(20px,3vw,40px) clamp(28px,3vw,44px);">
+    <div style="max-width:1190px; margin:0 auto; display:flex; flex-direction:column; gap:22px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#C99A45;">Featured article</span>
+        <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <a href="Blog Article.dc.html" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:0; background:#FBF8F2; border-radius:24px; box-shadow:0 0 26.2px 3px rgba(0,0,0,0.05); overflow:hidden;">
+        <img src="assets/fig-blog-1.jpg" alt="Levi looking out through the railings" style="width:100%; height:100%; min-height:300px; object-fit:cover;" />
+        <div style="padding:clamp(30px,3.4vw,52px); display:flex; flex-direction:column; justify-content:center; gap:16px;">
+          <span style="align-self:flex-start; border-radius:999px; padding:5px 14px; font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:#FFFFFF; background:#21447B;">H - Home</span>
+          <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(28px,3.2vw,38px); line-height:1.16; letter-spacing:-0.4px; color:#12304F; text-wrap:pretty;">Reading the Signals</h2>
+          <p style="margin:0; font-size:17.5px; line-height:1.62; color:#3D4A55; max-width:520px; text-wrap:pretty;">A quick guide to what companions tell you - dogs, cats, birds rabbits, guinea pigs and the golden rule that holds for all of them.</p>
+          <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:14.5px; color:#98A5AE;">
+            <span>28 Aug 2026</span><span>·</span><span>6 min read</span>
+          </div>
+          <span style="align-self:flex-start; margin-top:6px; display:inline-flex; align-items:center; gap:9px; background:#21447B; color:#FFFFFF; border-radius:71px; padding:13px 26px; font-family:'Karla',sans-serif; font-weight:500; font-size:15.5px;">Read the article →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section style="background:#FAF6EF; padding:clamp(28px,3vw,44px) clamp(20px,3vw,40px) clamp(60px,7vw,110px);">
+    <div style="max-width:1190px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(24px,2.6vw,38px);">
+
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+          <sc-for list="{{ filters }}" as="f" hint-placeholder-count="6">
+            <button type="button" onClick="{{ f.select }}" style="border:none; border-radius:71px; padding:12px 22px; font-family:'Karla',sans-serif; font-size:15px; font-weight:500; cursor:pointer; background:{{ f.bg }}; color:{{ f.fg }}; box-shadow:{{ f.ring }};">{{ f.label }}</button>
+          </sc-for>
+        </div>
+        <span style="font-size:14.5px; color:#98A5AE;">{{ countLabel }}</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:22px;">
+        <sc-for list="{{ shown }}" as="p" hint-placeholder-count="9">
+          <a href="{{ p.href }}" style="background:#FFFFFF; border-radius:21px; box-shadow:0 0 26.2px 3px rgba(0,0,0,0.05); overflow:hidden; display:flex; flex-direction:column;">
+            <img src="{{ p.image }}" alt="" style="width:100%; height:196px; object-fit:cover;" />
+            <div style="padding:24px 28px 26px; display:flex; flex-direction:column; gap:13px; flex:1;">
+              <span style="align-self:flex-start; border-radius:999px; padding:5px 14px; font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:1.2px; text-transform:uppercase; color:#FFFFFF; background:{{ p.colour }};">{{ p.tag }}</span>
+              <h3 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:22px; line-height:1.22; letter-spacing:-0.264px; color:#12304F; text-wrap:pretty;">{{ p.title }}</h3>
+              <p style="margin:0; flex:1; font-size:17.5px; line-height:1.6; color:#3D4A55; text-wrap:pretty;">{{ p.blurb }}</p>
+              <div style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:14.5px; color:#98A5AE; padding-top:14px; border-top:1px solid #EFE4D2; margin-top:6px;">
+                <span>{{ p.date }}</span><span>·</span><span>{{ p.read }}</span>
+              </div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="join" style="background:#EDF1F5; padding:clamp(56px,6vw,116px) clamp(20px,3vw,40px);">
+    <div style="max-width:1084px; margin:0 auto; background:#FFFFFF; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07); padding:clamp(46px,5.4vw,84px) clamp(24px,4vw,60px); display:flex; flex-direction:column; align-items:center; gap:20px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Join us</span>
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; text-align:center;">Walk beside us.</h2>
+      <p style="margin:0; max-width:520px; text-align:center; font-size:17px; line-height:1.65; color:#63727D; text-wrap:pretty;">Join our email community for gentle guidance, new resources and compassionate support, sent with care, whenever you need it.</p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px; width:100%; max-width:540px;">
+        <input type="email" placeholder="Your email address" style="flex:1; min-width:260px; height:51px; padding:0 21px; border:none; border-radius:999px; background:#FBF8F2; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.2); font-family:'Karla',sans-serif; font-size:16px; color:#0A2E52;" />
+        <button type="button" style="height:51px; padding:0 31px; border:none; border-radius:999px; background:#C99A45; color:#3A2A0C; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; cursor:pointer;" style-hover="background:#D9A85D">Join us</button>
+      </div>
+      <span style="font-size:13.5px; color:#63727D;">We'll only ever send things we'd want to receive ourselves.</span>
+    </div>
+  </section>
+
+  <footer style="background:#0A2E52; padding:clamp(52px,5vw,79px) clamp(20px,3vw,40px) 40px;">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:40px;">
+      <div><img src="assets/fig-roundel.png" alt="Mr Levi" style="width:152px; height:auto;" /></div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">HEART Hub</span>
+        <a href="HEART Framework v2.dc.html#hub-h" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Home &amp; Belonging</a>
+        <a href="HEART Framework v2.dc.html#hub-e" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Enrichment &amp; Living Well</a>
+        <a href="HEART Framework v2.dc.html#hub-a" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Ageing, Adaptation &amp; Advocacy</a>
+        <a href="HEART Framework v2.dc.html#hub-r" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Reflection, Remembrance &amp; Returning</a>
+        <a href="HEART Framework v2.dc.html#hub-t" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Together, Through Every Stage</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Explore</span>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">The HEART™ Framework</a>
+        <a href="Resources v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Resources</a>
+        <a href="#top" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Blog</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Shop (soon)</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Connect</span>
+        <a href="Homepage v2.dc.html#story" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">About Mr Levi</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Contact</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">FAQ</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Join the community</a>
+      </div>
+    </div>
+    <div style="max-width:1084px; margin:clamp(40px,4vw,72px) auto 0; padding-top:28px; border-top:1px solid rgba(255,255,255,0.13); display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; font-size:13.5px;">
+      <span style="color:rgba(255,255,255,0.45);">© 2026 Mr Levi's Legacy™. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.55);">Privacy · Terms · Made with heart by Creative Feed</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const HUBS = {
+  H: { word: 'Home', colour: '#21447B' },
+  E: { word: 'Enrichment', colour: '#93A389' },
+  A: { word: 'Ageing', colour: '#CAA355' },
+  R: { word: 'Reflection', colour: '#C0896C' },
+  T: { word: 'Together', colour: '#213858' }
+};
+
+const POSTS = [
+  { letter: 'H', title: 'Reading the Signals', blurb: 'A quick guide to what companions tell you - dogs, cats, birds rabbits, guinea pigs and the golden rule.', date: '28 Aug 2026', read: '6 min read', image: 'assets/fig-blog-1.jpg', href: 'Blog Article.dc.html' },
+  { letter: 'H', title: 'The First Thirty Days at Home', blurb: 'What settling in really looks like, and why routine matters more than anything you can buy.', date: '19 Aug 2026', read: '7 min read', image: 'assets/puppy-pot.jpg' },
+  { letter: 'H', title: 'A Home That Says Welcome', blurb: 'Small, practical changes that make a house feel safe from an animal\u2019s point of view.', date: '5 Aug 2026', read: '5 min read', image: 'assets/levi-tiles.jpg' },
+  { letter: 'E', title: 'Play Is Not a Luxury', blurb: 'Enrichment is not entertainment. It is how a companion stays curious, capable and well.', date: '30 Jul 2026', read: '6 min read', image: 'assets/cattle-dog-toy.jpg' },
+  { letter: 'E', title: 'The Walk You Both Need', blurb: 'Sniffing, pausing, wandering — why a slower walk does more good than a longer one.', date: '16 Jul 2026', read: '4 min read', image: 'assets/levi-park-run.jpg' },
+  { letter: 'E', title: 'Food, Weight and Long Life', blurb: 'The single most researched thing you can do for a companion\u2019s years, and how to get it right.', date: '2 Jul 2026', read: '8 min read', image: 'assets/levi-turquoise-beach.jpg' },
+  { letter: 'A', title: 'When Getting Older Starts', blurb: 'The early signs of ageing are quiet ones. Here is what to watch for, and when to act.', date: '24 Jun 2026', read: '7 min read', image: 'assets/fig-blog-2.jpg' },
+  { letter: 'A', title: 'Speaking Up at the Vet', blurb: 'You know your animal better than anyone in the room. How to make that count.', date: '11 Jun 2026', read: '5 min read', image: 'assets/levi-railings.jpg' },
+  { letter: 'A', title: 'Adapting the House Around Them', blurb: 'Footing, warmth, height and access — a room-by-room look at ageing well at home.', date: '28 May 2026', read: '6 min read', image: 'assets/fig-heart-e.jpg' },
+  { letter: 'R', title: 'Writing It Down Before You Forget', blurb: 'The small details fade first. A gentle case for keeping a record while you still can.', date: '14 May 2026', read: '5 min read', image: 'assets/jo-and-dogs.jpg' },
+  { letter: 'R', title: 'Grief Without a Script', blurb: 'There is no correct way to mourn an animal, and no timeline you are meant to keep to.', date: '30 Apr 2026', read: '7 min read', image: 'assets/hero-beach-walk.jpg' },
+  { letter: 'R', title: 'Making a Memory Box', blurb: 'What to keep, how to keep it, and ways to tell the story later.', date: '16 Apr 2026', read: '4 min read', image: 'assets/fig-heart-r.jpg' },
+  { letter: 'T', title: 'The Night Before', blurb: 'What to expect, what to ask, and how to make a last day feel like a kind one.', date: '17 Apr 2026', read: '9 min read', image: 'assets/levi-sweater-beach.jpg' },
+  { letter: 'T', title: 'Comfort Care at Home', blurb: 'Pain, appetite, rest and dignity — building a daily routine when treatment turns to comfort.', date: '3 Apr 2026', read: '8 min read', image: 'assets/fig-heart-t.jpg' },
+  { letter: 'T', title: 'Nobody Should Do This Alone', blurb: 'Who to lean on, what to ask for, and why support is not an imposition.', date: '20 Mar 2026', read: '5 min read', image: 'assets/fig-g8.jpg' }
+];
+
+const LETTERS = ['H', 'E', 'A', 'R', 'T'];
+
+class Component extends DCLogic {
+  state = { filter: 'All' };
+
+  renderVals() {
+    const { filter } = this.state;
+    const shown = POSTS.filter(p => filter === 'All' || p.letter === filter).map((p, i) => ({
+      key: p.letter + i,
+      href: p.href || 'Blog Article.dc.html',
+      image: p.image,
+      title: p.title,
+      blurb: p.blurb,
+      date: p.date,
+      read: p.read,
+      colour: HUBS[p.letter].colour,
+      tag: p.letter + ' - ' + HUBS[p.letter].word
+    }));
+
+    const filters = ['All'].concat(LETTERS).map(f => {
+      const on = filter === f;
+      return {
+        key: f,
+        label: f === 'All' ? 'All articles' : f + ' - ' + HUBS[f].word,
+        bg: on ? '#21447B' : '#FFFFFF',
+        fg: on ? '#FFFFFF' : '#3D4A55',
+        ring: on ? 'none' : 'inset 0 0 0 1px #E4D7BE',
+        select: () => this.setState({ filter: f })
+      };
+    });
+
+    return { filters, shown, countLabel: shown.length + (shown.length === 1 ? ' article' : ' articles') };
+  }
+}
+</script>
+</body>
+</html>
