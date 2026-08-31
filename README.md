@@ -1,7 +1,9 @@
-# Handoff: Mr Levi's Legacy — website (Homepage, HEART Framework, Resources, Blog)
+# Handoff: Mr Levi's Legacy — website (Homepage, HEART Framework, Resources, Blog, About, FAQ, Contact)
 
 ## Overview
-Mr Levi's Legacy is a compassionate education and support site for people who care for companion animals. The site is organised around the **HEART™ Companion Animal Care Framework** — five "Hubs" covering the stages of a companion animal's life. This bundle covers four core pages plus one sample article template.
+Mr Levi's Legacy is a compassionate education and support site for people who care for companion animals. The site is organised around the **HEART™ Companion Animal Care Framework** — five "Hubs" covering the stages of a companion animal's life. This bundle covers seven core pages plus one sample article template.
+
+`About v2.dc.html`, `FAQ v2.dc.html` and `Contact v2.dc.html` were added after the original four-page handoff, using client-supplied copy (About and FAQ) and the established design tokens, shared components and interaction patterns below. All cross-page links (nav, footer, homepage cards, the "Visit our FAQ" prompt) have been rewired to point at these pages instead of the placeholder `#story` / `#join` anchors used while they didn't exist yet.
 
 ## About the design files
 The `.dc.html` files in this bundle are **design references created in HTML** — prototypes showing intended look, copy and behaviour. They are not production code to copy directly. They use a small in-house runtime (`support.js`) with a custom `<x-dc>` template syntax; that runtime is **not** part of the deliverable.
@@ -165,7 +167,35 @@ Purpose: browse articles by HEART category.
 4. Newsletter band + footer.
 
 ### 5. Article template (`Blog Article.dc.html`)
-Sample article ("Reading the Signals") showing the long-form template: narrow measure body copy, paired relaxed/stressed **signal cards**, and tinted callout notes. Use as the pattern for all article detail pages. *Flagged for removal from the design set if the client doesn't want it — confirm before building.*
+Sample article ("Reading the Signals") showing the long-form template: narrow measure body copy, paired relaxed/stressed **signal cards**, and tinted callout notes. Use as the pattern for all article detail pages. *Flagged for removal from the design set if the client doesn't want it — confirm before building.* Note: this file predates the "v2" pass and still links to non-`v2` filenames (`Homepage.dc.html`, `HEART Framework.dc.html`, etc.) — resolve that alongside the removal decision rather than patching it in isolation.
+
+### 6. About (`About v2.dc.html`)
+Purpose: tell Mr Levi's story and explain why the site exists, using the client's supplied About-page copy in full.
+1. Interior hero — eyebrow "Mr Levi's Story™", h1 "One little dog. One extraordinary legacy.", italic sub "He loves. Faithfully. Wholeheartedly. Without expectation."
+2. **Meet Mr Levi** — two-column intro (narrative text + sticky portrait image), matching the homepage Story section's layout, with a gold-bordered pull-quote for "He loves. / Faithfully. Wholeheartedly. Without expectation."
+3. **A journey that began long before Levi** — narrow single-column narrative (the author's own story: childhood on a farm, becoming an End-of-Life Doula), followed by a full-width rounded photo with caption.
+4. **The questions Levi helped me ask** — navy band (matches the HEART hub-chip band styling) listing the five guiding questions from the source copy as individual cards.
+5. **Why Mr Levi's Legacy™ exists** / **The HEART™ behind everything we do** (with a CTA button into `HEART Framework v2.dc.html`) / **Our mission** (Fraunces 300 statement, matching the homepage Manifesto section) / **Looking forward** — narrow-column sections alternating white/cream, ending in a full-width photo + caption.
+6. Custom join band — "Stay close to the journey." (client copy) instead of the generic "Walk beside us." heading, with two extra inline links to the HEART page and Resources page beneath the form, per the source doc's designer note.
+7. Footer.
+
+Designer's placement notes for the four unbriefed photos (hero, candid, nostalgic, tender closing) were mapped to existing `assets/` photography (`hero-beach-walk.jpg`, `levi-sweater-beach.jpg`, `jo-and-dogs.jpg`, `levi-railings.jpg`) — swap for the client's actual choices if they differ.
+
+### 7. FAQ (`FAQ v2.dc.html`)
+Purpose: answer the questions guardians ask most, organised into the five categories from the client's FAQ doc.
+1. Interior hero — h1 "Answers, gently offered.", intro line linking to the Contact page.
+2. **Accordion** — five categories (About Mr Levi's Legacy™, Using Our Resources, Support Guidance & Your Vet, Your Privacy & Our Content, Staying in Touch), each a white card of collapsible rows. One question open at a time; `+`/`−` indicator, same card-shadow language as the Resources cards. Built with the same `sc-for` / `sc-if` / `DCLogic` state pattern as the Resources page's email-gate modal — see the script block for the `FAQS` data array and `Component.toggle()`.
+3. A gold-bordered callout with the source doc's professional-advice disclaimer.
+4. Newsletter band + footer.
+
+The source doc's internal links (About, HEART™, Contact) are wired to their pages; **Privacy Policy**, **Terms & Conditions** and **Refund Policy** are left as plain text — those pages don't exist yet in this bundle (see Outstanding, below), so no link target is invented for them.
+
+### 8. Contact (`Contact v2.dc.html`)
+Purpose: a way to reach the team — not present in the original four-page handoff, designed to match the rest of the system since every other page linked to it.
+1. Interior hero — h1 "We're here, whenever you need us."
+2. Two-column: a contact form (name, email, subject, message) on the left with client-shaped copy ("I read every message personally…", from the FAQ doc's "How do I contact you?" answer) and inline validation; on the right, an urgent-care redirect callout (matches the FAQ's "urgent help" guidance — this is not for emergencies), a direct email card, and a link into the FAQ.
+3. Submitting swaps the form for a confirmation state, following the same non-functional-prototype convention as the Resources email gate — see README **Interactions & behaviour** below.
+4. Newsletter band + footer.
 
 ---
 
@@ -200,6 +230,9 @@ For production, serve WebP/AVIF with JPEG fallback and add `srcset` for the hero
 | `Resources v2.dc.html` | Resources page + email-gate modal |
 | `Blog v2.dc.html` | Blog index with category filter |
 | `Blog Article.dc.html` | Article detail template |
+| `About v2.dc.html` | About / Mr Levi's Story page |
+| `FAQ v2.dc.html` | FAQ page with category accordion |
+| `Contact v2.dc.html` | Contact page + form |
 | `support.js` | Prototype runtime — **not** for production |
 | `assets/` | All images and icons |
 
@@ -208,4 +241,6 @@ For production, serve WebP/AVIF with JPEG fallback and add `srcset` for the hero
 2. Real resource list and real blog posts (current titles and copy are representative).
 3. Confirm whether New Spirit will be licensed for display type.
 4. Shop is "coming soon" — the card is a placeholder with no destination.
-5. FAQ, Privacy, Terms and Contact pages are linked but not yet designed.
+5. Contact form has no backend — wire it to real email delivery (see **Interactions & behaviour**).
+6. Privacy Policy, Terms & Conditions and Refund Policy pages are referenced (FAQ page, footer) but not yet designed — the FAQ page leaves those mentions as plain text until they exist.
+7. About page's four unbriefed image placements were filled with existing `assets/` photography as placeholders — confirm with the client whether those choices should be swapped.

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mr Levi's Story — Mr Levi's Legacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Karla:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FBF8F2; color: #3D4A55; font-family: 'Karla', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0E4478; text-decoration: none; }
+  a:hover { color: #C99A45; }
+  img { display: block; }
+  input::placeholder { color: #98A5AE; }
+</style>
+</helmet>
+
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:40; background:#F8F3EB;">
+    <div style="max-width:1500px; margin:0 auto; padding:14px clamp(20px,3vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 32px;">
+      <a href="Homepage v2.dc.html" style="display:block;"><img src="assets/fig-logo.png" alt="Mr Levi's Legacy — All About Heart" style="height:96px; width:auto;" /></a>
+      <nav style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; font-size:16px; font-family:'Karla',sans-serif;">
+        <a href="HEART Framework v2.dc.html" style="padding:14px 26px; border-radius:999px; box-shadow:inset 0 0 0 1px rgba(212,166,78,0.45); color:#0A2E52;" style-hover="box-shadow:inset 0 0 0 1px #C99A45">Heart™</a>
+        <a href="#top" style="padding:14px 18px; color:#0E4478; font-weight:600;">About</a>
+        <a href="Resources v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Resources</a>
+        <a href="Blog v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Blog</a>
+        <a href="Contact v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Contact</a>
+        <a href="#join" style="margin-left:6px; padding:15px 24px; border-radius:999px; background:#0E4478; color:#FFFFFF; font-weight:500;" style-hover="background:#0A2E52">Join us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative; padding:clamp(56px,6vw,104px) clamp(20px,3vw,40px) clamp(60px,7vw,116px); overflow:hidden; background:#0C3660;">
+    <img src="assets/hero-beach-walk.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 40%; opacity:0.24;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,68,127,0.92) 0%, rgba(12,54,96,0.96) 100%);"></div>
+    <div style="position:relative; max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:20px;">
+      <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:13px; letter-spacing:2.86px; text-transform:uppercase; color:#E3BE7C;">Mr Levi's Story™</span>
+      <h1 style="margin:0; font-family:'Newsreader',serif; font-weight:400; font-size:clamp(36px,5vw,68px); line-height:1.08; color:#FFFFFF; text-wrap:pretty;">One little dog. One extraordinary legacy.</h1>
+      <span style="width:72px; height:1px; background:#C79449; margin:4px 0;"></span>
+      <p style="margin:0; font-family:'Newsreader',serif; font-style:italic; font-size:clamp(18px,2.1vw,25px); line-height:1.55; color:#EFE3CB; max-width:640px; text-wrap:pretty;">He loves. Faithfully. Wholeheartedly. Without expectation.</p>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:clamp(36px,5vw,64px); align-items:start;">
+      <div style="display:flex; flex-direction:column; gap:22px;">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Meet Mr Levi</span>
+          <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        </div>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Mr Levi never set out to inspire a movement. He doesn't know he has become the heart behind a compassionate education platform supporting companion animals and the people who love them. He simply does what companion animals have always done so beautifully.</p>
+        <blockquote style="margin:0; padding-left:20px; border-left:2px solid #C99A45; font-family:'Fraunces',serif; font-style:italic; font-size:20px; line-height:1.5; color:#0E4478;">He loves.<br />Faithfully. Wholeheartedly. Without expectation.</blockquote>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Somewhere along the way, I realised that one small schnauzer had quietly become one of my greatest teachers — not because he is extraordinary, but because he reminds me that love is often found in life's most ordinary moments.</p>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Levi is a miniature schnauzer with a gentle nature, a cheeky personality and a quiet wisdom that continues to surprise me. He shares my days in all the ways companion animals so naturally do — the morning routines, the walks, the quiet afternoons, the adventures, the laughter, the tears, and the comforting silence when no words are needed.</p>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Like so many companion animals, he has become woven into the fabric of my life. Not simply as a pet, but as family. As the years have passed, our journey has evolved, just as every relationship does. Some seasons bring energy and adventure. Others invite us to slow down, adapt, notice the small things, and discover new ways of caring for one another.</p>
+        <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Levi continues to remind me that love is not measured by how much we do. It is measured by how fully we are present.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:14px; position:sticky; top:130px;">
+        <img src="assets/levi-sweater-beach.jpg" alt="Mr Levi on a beach walk, wearing his favourite sweater" style="width:100%; max-width:340px; aspect-ratio:4/5; object-fit:cover; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07);" />
+        <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:12.5px; letter-spacing:2px; text-transform:uppercase; color:#63727D;">Mr Levi</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#FFFFFF; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:22px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Where it began</span>
+        <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(28px,3.2vw,38px); line-height:1.2; letter-spacing:-0.4px; color:#0A2E52; text-wrap:pretty;">A journey that began long before Levi.</h2>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">People often ask how Mr Levi's Legacy began. The truth is that its roots reach much further back than one little dog.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Growing up in a small country town, surrounded by animals on my grandparents' farm, I was constantly immersed in the rhythms of life — dogs, cats, birds, kittens, puppies, farm animals and native wildlife.</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-style:italic; font-size:19px; line-height:1.6; color:#63727D;">Birth. Illness. Recovery. Loss.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Life and death were never hidden from me. They were simply part of the natural cycle of loving and caring for living beings. As a child, I instinctively rescued injured animals whenever I could. If one died, I would gather flowers, say a quiet prayer, create a small ritual, and gently bury them.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Looking back, I realise I have probably always been comfortable with life's journey and end of life. Offering comfort, presence and compassion has simply always felt like part of who I am.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">That path eventually led me to become an End-of-Life Doula, educator and advocate, supporting individuals and families through some of life's most vulnerable moments. The heart of that work — being fully present, offering comfort, and helping people feel less alone in life's hardest moments — is exactly what I now bring to companion animals and the people who love them.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Yet throughout all those years, companion animals continued to teach me lessons that no textbook ever could.</p>
+    </div>
+  </section>
+
+  <figure style="margin:0; background:#FFFFFF; padding:0 clamp(20px,3vw,40px) clamp(56px,7vw,104px);">
+    <div style="max-width:1084px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <img src="assets/jo-and-dogs.jpg" alt="Jo with her dogs, the companionship that shaped this work" style="width:100%; max-height:460px; object-fit:cover; border-radius:14px;" />
+      <figcaption style="font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:#63727D; text-align:center;">Comfort, presence and compassion — always shared with a companion close by.</figcaption>
+    </div>
+  </figure>
+
+  <section style="position:relative; padding:clamp(56px,6vw,100px) clamp(20px,3vw,40px); overflow:hidden; background:#0C3660;">
+    <img src="assets/fig-band-bg.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;" />
+    <div style="position:absolute; inset:0; background:rgba(12,54,96,0.93);"></div>
+    <div style="position:relative; max-width:760px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:24px; text-align:center;">
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(28px,3.4vw,38px); line-height:1.24; letter-spacing:-0.4px; color:#FFFFFF; text-wrap:pretty;">The questions Levi helped me ask.</h2>
+      <p style="margin:0; font-size:17px; line-height:1.65; color:#CFDDEC; max-width:620px; text-wrap:pretty;">As Levi entered his senior years — and as he continues to teach me each day — I found myself asking questions that so many companion animal guardians quietly carry:</p>
+      <div style="width:100%; display:flex; flex-direction:column; gap:14px; text-align:left; max-width:640px;">
+        <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:18px 24px; display:flex; gap:14px; align-items:flex-start;">
+          <span style="flex:0 0 auto; color:#C99A45; font-family:'Fraunces',serif; font-size:20px; line-height:1.4;">·</span>
+          <span style="font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:#EFE3CB;">How do we recognise when our companion's needs are changing?</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:18px 24px; display:flex; gap:14px; align-items:flex-start;">
+          <span style="flex:0 0 auto; color:#C99A45; font-family:'Fraunces',serif; font-size:20px; line-height:1.4;">·</span>
+          <span style="font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:#EFE3CB;">How do we know what supports their quality of life?</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:18px 24px; display:flex; gap:14px; align-items:flex-start;">
+          <span style="flex:0 0 auto; color:#C99A45; font-family:'Fraunces',serif; font-size:20px; line-height:1.4;">·</span>
+          <span style="font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:#EFE3CB;">How do we prepare without losing hope?</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:18px 24px; display:flex; gap:14px; align-items:flex-start;">
+          <span style="flex:0 0 auto; color:#C99A45; font-family:'Fraunces',serif; font-size:20px; line-height:1.4;">·</span>
+          <span style="font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:#EFE3CB;">How do we make thoughtful decisions with confidence instead of fear?</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:18px 24px; display:flex; gap:14px; align-items:flex-start;">
+          <span style="flex:0 0 auto; color:#C99A45; font-family:'Fraunces',serif; font-size:20px; line-height:1.4;">·</span>
+          <span style="font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.5; color:#EFE3CB;">How do we honour the life still being lived while gently preparing for whatever may come next?</span>
+        </div>
+      </div>
+      <p style="margin:0; font-size:17px; line-height:1.65; color:#CFDDEC; max-width:640px; text-wrap:pretty;">The more I searched for answers, the more I realised that countless families were asking exactly the same questions. Many felt overwhelmed. Many felt unprepared. Many simply wanted reassurance that they were doing the very best they could.</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-style:italic; font-size:20px; line-height:1.5; color:#FFFFFF;">That realisation became the beginning of Mr Levi's Legacy™.</p>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:22px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Why we exist</span>
+        <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(28px,3.2vw,38px); line-height:1.2; letter-spacing:-0.4px; color:#0A2E52; text-wrap:pretty;">Why Mr Levi's Legacy™ exists.</h2>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Mr Levi's Legacy™ is not named because Levi's story is more important than any other companion animal's story. It is named because every meaningful legacy begins with one life that quietly changes another.</p>
+      <blockquote style="margin:0; padding-left:20px; border-left:2px solid #C99A45; font-family:'Fraunces',serif; font-style:italic; font-size:20px; line-height:1.5; color:#0E4478;">Levi changed mine.</blockquote>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">My hope is that this work honours the journeys of countless companion animals who continue to shape, comfort, teach and love the people fortunate enough to walk beside them.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Mr Levi's Legacy™ exists to help companion animal guardians feel more informed, more confident and less alone. Through compassionate education, practical resources, thoughtful planning, advocacy and community, we hope to support every stage of the journey — from belonging and living well, to changing needs, illness, comfort care, remembrance and legacy.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Because preparation is never about giving up. It is another expression of love.</p>
+    </div>
+  </section>
+
+  <section style="background:#FFFFFF; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:22px; align-items:flex-start;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Our foundation</span>
+        <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(28px,3.2vw,38px); line-height:1.2; letter-spacing:-0.4px; color:#0A2E52; text-wrap:pretty;">The HEART™ behind everything we do.</h2>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Everything you will find within Mr Levi's Legacy™ begins with one simple belief. Caring for a companion animal is never a series of isolated events. It is a relationship — a lifelong journey built on connection, trust, compassion, advocacy and love.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">That belief became the HEART™ Companion Animal Care Framework. It recognises that every companion animal's journey is unique. Some companions live long and healthy lives. Others experience illness, disability, surgery, palliative care, hospice support or unexpected loss. Whatever the journey looks like, every stage deserves thoughtful, compassionate care.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">The HEART™ Framework is more than a philosophy. It is the foundation from which every article, resource, guide, tool and conversation within Mr Levi's Legacy grows.</p>
+      <a href="HEART Framework v2.dc.html" style="margin-top:6px; display:inline-flex; background:#0F447F; color:#FFFFFF; border-radius:999px; padding:15px 28px; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px;" style-hover="background:#0A2E52">Explore the HEART™ Companion Animal Care Framework →</a>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:724px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:24px; text-align:center;">
+      <img src="assets/fig-logo.png" alt="" style="height:60px; width:auto; opacity:0.9;" />
+      <p style="margin:0; font-family:'Fraunces',serif; font-weight:300; font-size:clamp(24px,2.8vw,32px); line-height:1.4; letter-spacing:-0.3px; color:#0A2E52; text-wrap:pretty;">Our mission is to help people care for their companion animals with confidence, compassion, preparedness, dignity, advocacy and love throughout every stage of life's journey. <em style="font-style:italic; color:#63727D;">We believe knowledge empowers. Preparation brings confidence. Advocacy protects wellbeing. And love remains at the heart of it all.</em></p>
+    </div>
+  </section>
+
+  <section style="background:#FFFFFF; padding:clamp(56px,7vw,104px) clamp(20px,3vw,40px);">
+    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:22px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Looking forward</span>
+        <span style="flex:0 0 64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Levi continues to teach me every day. He reminds me that love often becomes quieter over time. It is found in slowing our pace. In noticing small changes. In adapting with compassion. In advocating when they cannot speak for themselves. In celebrating ordinary days. In making memories while we still can. And in recognising that every stage of life's journey has meaning.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">My hope is that Mr Levi's Legacy™ becomes more than a website. I hope it becomes a trusted companion — a place you return to for guidance, reassurance, practical support and gentle encouragement whenever you need it.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Whether you are welcoming a new companion into your life, sharing the joy of living well, navigating changing needs, facing illness, making difficult decisions, grieving a beloved friend, or simply wanting to love them as well as you can — you are welcome here.</p>
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#3D4A55; text-wrap:pretty;">Because every companion animal deserves to be cared for with compassion, dignity and love. And every person who loves them deserves to feel supported along the way.</p>
+      <p style="margin:0; font-family:'Fraunces',serif; font-style:italic; font-size:20px; line-height:1.5; color:#0E4478;">Wherever you and your companion are on life's journey, you are welcome here. We are honoured to walk beside you, together, through every stage.</p>
+    </div>
+  </section>
+
+  <figure style="margin:0; background:#FFFFFF; padding:0 clamp(20px,3vw,40px) clamp(56px,7vw,104px);">
+    <div style="max-width:1084px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <img src="assets/levi-railings.jpg" alt="Mr Levi peeking through the verandah railings, quiet in his senior years" style="width:100%; max-height:460px; object-fit:cover; border-radius:14px;" />
+      <figcaption style="font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:#63727D; text-align:center;">Quiet moments, still teaching me every day.</figcaption>
+    </div>
+  </figure>
+
+  <section id="join" style="background:#EDF1F5; padding:clamp(56px,6vw,116px) clamp(20px,3vw,40px);">
+    <div style="max-width:1084px; margin:0 auto; background:#FFFFFF; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07); padding:clamp(46px,5.4vw,84px) clamp(24px,4vw,60px); display:flex; flex-direction:column; align-items:center; gap:20px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Join us</span>
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; text-align:center;">Stay close to the journey.</h2>
+      <p style="margin:0; max-width:520px; text-align:center; font-size:17px; line-height:1.65; color:#63727D; text-wrap:pretty;">Join our email community for gentle guidance, new resources and compassionate support — arriving with care, whenever you need it.</p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px; width:100%; max-width:540px;">
+        <input type="email" placeholder="Your email address" style="flex:1; min-width:260px; height:51px; padding:0 21px; border:none; border-radius:999px; background:#FBF8F2; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.2); font-family:'Karla',sans-serif; font-size:16px; color:#0A2E52;" />
+        <button type="button" style="height:51px; padding:0 31px; border:none; border-radius:999px; background:#C99A45; color:#3A2A0C; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; cursor:pointer;" style-hover="background:#D9A85D">Join us</button>
+      </div>
+      <span style="font-size:13.5px; color:#63727D;">We'll only ever send things we'd want to receive ourselves.</span>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px 22px; margin-top:8px; font-size:15px;">
+        <a href="HEART Framework v2.dc.html" style="color:#0E4478; font-weight:600;" style-hover="color:#C99A45">Explore the HEART™ Framework →</a>
+        <span style="color:#98A5AE;">·</span>
+        <a href="Resources v2.dc.html" style="color:#0E4478; font-weight:600;" style-hover="color:#C99A45">Browse our free resources →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0A2E52; padding:clamp(52px,5vw,79px) clamp(20px,3vw,40px) 40px;">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:40px;">
+      <div><img src="assets/fig-roundel.png" alt="Mr Levi" style="width:152px; height:auto;" /></div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">HEART Hub</span>
+        <a href="HEART Framework v2.dc.html#hub-h" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Home &amp; Belonging</a>
+        <a href="HEART Framework v2.dc.html#hub-e" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Enrichment &amp; Living Well</a>
+        <a href="HEART Framework v2.dc.html#hub-a" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Ageing, Adaptation &amp; Advocacy</a>
+        <a href="HEART Framework v2.dc.html#hub-r" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Reflection, Remembrance &amp; Returning</a>
+        <a href="HEART Framework v2.dc.html#hub-t" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Together, Through Every Stage</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Explore</span>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">The HEART™ Framework</a>
+        <a href="Resources v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Resources</a>
+        <a href="Blog v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Blog</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Shop (soon)</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Connect</span>
+        <a href="#top" style="font-size:15.5px; line-height:1.65; color:#E4C791; font-weight:600;">About Mr Levi</a>
+        <a href="Contact v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Contact</a>
+        <a href="FAQ v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">FAQ</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Join the community</a>
+      </div>
+    </div>
+    <div style="max-width:1084px; margin:clamp(40px,4vw,72px) auto 0; padding-top:28px; border-top:1px solid rgba(255,255,255,0.13); display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; font-size:13.5px;">
+      <span style="color:rgba(255,255,255,0.45);">© 2026 Mr Levi's Legacy™. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.55);">Privacy · Terms · Made with heart by Creative Feed</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}"></script>
+</body>
+</html>

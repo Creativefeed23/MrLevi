@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Frequently Asked Questions — Mr Levi's Legacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Karla:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  body { margin: 0; background: #FBF8F2; color: #3D4A55; font-family: 'Karla', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #0E4478; text-decoration: none; }
+  a:hover { color: #C99A45; }
+  img { display: block; }
+  input::placeholder { color: #98A5AE; }
+  button { font: inherit; }
+</style>
+</helmet>
+
+<div style="width:100%; overflow-x:hidden;">
+
+  <header style="position:sticky; top:0; z-index:40; background:#F8F3EB;">
+    <div style="max-width:1500px; margin:0 auto; padding:14px clamp(20px,3vw,40px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px 32px;">
+      <a href="Homepage v2.dc.html" style="display:block;"><img src="assets/fig-logo.png" alt="Mr Levi's Legacy — All About Heart" style="height:96px; width:auto;" /></a>
+      <nav style="display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; font-size:16px; font-family:'Karla',sans-serif;">
+        <a href="HEART Framework v2.dc.html" style="padding:14px 26px; border-radius:999px; box-shadow:inset 0 0 0 1px rgba(212,166,78,0.45); color:#0A2E52;" style-hover="box-shadow:inset 0 0 0 1px #C99A45">Heart™</a>
+        <a href="About v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">About</a>
+        <a href="Resources v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Resources</a>
+        <a href="Blog v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Blog</a>
+        <a href="Contact v2.dc.html" style="padding:14px 18px; color:#0A2E52;" style-hover="color:#0E4478">Contact</a>
+        <a href="#join" style="margin-left:6px; padding:15px 24px; border-radius:999px; background:#0E4478; color:#FFFFFF; font-weight:500;" style-hover="background:#0A2E52">Join us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="position:relative; padding:clamp(56px,6vw,104px) clamp(20px,3vw,40px) clamp(60px,7vw,116px); overflow:hidden; background:#0C3660;">
+    <img src="assets/fig-hero-bg.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 48%; opacity:0.22;" />
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,68,127,0.92) 0%, rgba(12,54,96,0.96) 100%);"></div>
+    <div style="position:relative; max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:20px;">
+      <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:13px; letter-spacing:2.86px; text-transform:uppercase; color:#E3BE7C;">Frequently Asked Questions</span>
+      <h1 style="margin:0; font-family:'Newsreader',serif; font-weight:400; font-size:clamp(36px,5vw,68px); line-height:1.08; color:#FFFFFF; text-wrap:pretty;">Answers, gently offered.</h1>
+      <span style="width:72px; height:1px; background:#C79449; margin:4px 0;"></span>
+      <p style="margin:0; font-family:'Newsreader',serif; font-style:italic; font-size:clamp(18px,2.1vw,25px); line-height:1.55; color:#EFE3CB; max-width:640px; text-wrap:pretty;">Here you'll find answers to the questions guardians ask us most.</p>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(44px,5vw,72px) clamp(20px,3vw,40px) 0;">
+    <div style="max-width:800px; margin:0 auto; text-align:center;">
+      <p style="margin:0; font-size:17.5px; line-height:1.72; color:#63727D; text-wrap:pretty;">If you can't find what you're looking for, you are always welcome to <a href="Contact v2.dc.html" style="font-weight:600;">get in touch</a>.</p>
+    </div>
+  </section>
+
+  <section style="background:#FBF8F2; padding:clamp(40px,5vw,60px) clamp(20px,3vw,40px) clamp(60px,7vw,110px);">
+    <div style="max-width:800px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(40px,5vw,60px);">
+
+      <sc-for list="{{ categories }}" as="cat" hint-placeholder-count="5">
+        <div style="display:flex; flex-direction:column; gap:18px;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(22px,2.4vw,27px); line-height:1.2; letter-spacing:-0.3px; color:#0A2E52;">{{ cat.title }}</h2>
+            <span style="flex:1; height:1px; background:#C99A45; opacity:0.35;"></span>
+          </div>
+          <div style="background:#FFFFFF; border-radius:21px; box-shadow:0 0 26.2px 3px rgba(0,0,0,0.05); overflow:hidden;">
+            <sc-for list="{{ cat.items }}" as="item" hint-placeholder-count="4">
+              <div style="border-bottom:1px solid rgba(14,68,120,0.08);">
+                <button type="button" onClick="{{ item.toggle }}" style="width:100%; border:none; background:transparent; cursor:pointer; text-align:left; padding:22px 26px; display:flex; align-items:center; justify-content:space-between; gap:20px;">
+                  <span style="font-family:'Karla',sans-serif; font-weight:600; font-size:17px; line-height:1.4; color:#0A2E52;">{{ item.q }}</span>
+                  <span style="flex:0 0 auto; width:28px; height:28px; border-radius:50%; background:#FBF6EE; box-shadow:inset 0 0 0 1px #EFE0C7; color:#C99A45; display:flex; align-items:center; justify-content:center; font-size:16px; line-height:1;">{{ item.symbol }}</span>
+                </button>
+                <sc-if value="{{ item.isOpen }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding:0 26px 24px; max-width:660px;">
+                    <p style="margin:0; font-size:16px; line-height:1.68; color:#3D4A55; text-wrap:pretty;">{{ item.a }}</p>
+                  </div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+
+      <div style="background:#FBF3E3; box-shadow:inset 0 0 0 1px rgba(185,145,46,0.35); border-radius:18px; padding:24px 28px;">
+        <p style="margin:0; font-family:'Karla',sans-serif; font-weight:700; font-size:14.5px; line-height:1.6; color:#8A5A2E;">A gentle reminder: everything shared through Mr Levi's Legacy™ is intended for education, guidance and emotional support only. It is not veterinary, medical, legal or financial advice, and it is never a substitute for professional care. Please always consult your veterinarian about your companion's health.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="join" style="background:#EDF1F5; padding:clamp(56px,6vw,116px) clamp(20px,3vw,40px);">
+    <div style="max-width:1084px; margin:0 auto; background:#FFFFFF; border-radius:24px; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.07), 0 2px 4px rgba(10,46,82,0.04), 0 12px 32px rgba(10,46,82,0.07); padding:clamp(46px,5.4vw,84px) clamp(24px,4vw,60px); display:flex; flex-direction:column; align-items:center; gap:20px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.4px; text-transform:uppercase; color:#63727D;">Join us</span>
+        <span style="width:64px; height:1px; background:#C99A45; opacity:0.45;"></span>
+      </div>
+      <h2 style="margin:0; font-family:'Fraunces',serif; font-weight:400; font-size:clamp(30px,3.4vw,42px); line-height:1.14; letter-spacing:-0.504px; color:#0A2E52; text-align:center;">Walk beside us.</h2>
+      <p style="margin:0; max-width:520px; text-align:center; font-size:17px; line-height:1.65; color:#63727D; text-wrap:pretty;">Join our email community for gentle guidance, new resources and compassionate support, sent with care, whenever you need it.</p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:10px; width:100%; max-width:540px;">
+        <input type="email" placeholder="Your email address" style="flex:1; min-width:260px; height:51px; padding:0 21px; border:none; border-radius:999px; background:#FBF8F2; box-shadow:inset 0 0 0 1px rgba(14,68,120,0.2); font-family:'Karla',sans-serif; font-size:16px; color:#0A2E52;" />
+        <button type="button" style="height:51px; padding:0 31px; border:none; border-radius:999px; background:#C99A45; color:#3A2A0C; font-family:'Karla',sans-serif; font-weight:600; font-size:15.5px; cursor:pointer;" style-hover="background:#D9A85D">Join us</button>
+      </div>
+      <span style="font-size:13.5px; color:#63727D;">We'll only ever send things we'd want to receive ourselves.</span>
+    </div>
+  </section>
+
+  <footer style="background:#0A2E52; padding:clamp(52px,5vw,79px) clamp(20px,3vw,40px) 40px;">
+    <div style="max-width:1084px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(210px,1fr)); gap:40px;">
+      <div><img src="assets/fig-roundel.png" alt="Mr Levi" style="width:152px; height:auto;" /></div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">HEART Hub</span>
+        <a href="HEART Framework v2.dc.html#hub-h" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Home &amp; Belonging</a>
+        <a href="HEART Framework v2.dc.html#hub-e" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Enrichment &amp; Living Well</a>
+        <a href="HEART Framework v2.dc.html#hub-a" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Ageing, Adaptation &amp; Advocacy</a>
+        <a href="HEART Framework v2.dc.html#hub-r" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Reflection, Remembrance &amp; Returning</a>
+        <a href="HEART Framework v2.dc.html#hub-t" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Together, Through Every Stage</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Explore</span>
+        <a href="HEART Framework v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">The HEART™ Framework</a>
+        <a href="Resources v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Resources</a>
+        <a href="Blog v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Blog</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Shop (soon)</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <span style="font-family:'Karla',sans-serif; font-weight:700; font-size:12px; letter-spacing:2.16px; text-transform:uppercase; color:#FFFFFF; margin-bottom:12px;">Connect</span>
+        <a href="About v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">About Mr Levi</a>
+        <a href="Contact v2.dc.html" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Contact</a>
+        <a href="#top" style="font-size:15.5px; line-height:1.65; color:#E4C791; font-weight:600;">FAQ</a>
+        <a href="#join" style="font-size:15.5px; line-height:1.65; color:rgba(255,255,255,0.66);" style-hover="color:#E4C791">Join the community</a>
+      </div>
+    </div>
+    <div style="max-width:1084px; margin:clamp(40px,4vw,72px) auto 0; padding-top:28px; border-top:1px solid rgba(255,255,255,0.13); display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; font-size:13.5px;">
+      <span style="color:rgba(255,255,255,0.45);">© 2026 Mr Levi's Legacy™. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.55);">Privacy · Terms · Made with heart by Creative Feed</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+const FAQS = [
+  {
+    key: 'about',
+    title: "About Mr Levi's Legacy™",
+    items: [
+      { q: "What is Mr Levi's Legacy™?", a: "Mr Levi's Legacy is a compassionate education platform supporting companion animals and the people who love them, through every stage of life's journey. Through gentle guidance, practical resources, planning tools and community, we help guardians feel more informed, more confident and less alone — from welcoming a new companion and living well together, through changing needs, illness, comfort care, remembrance and legacy." },
+      { q: "Who is Mr Levi?", a: "Mr Levi is a miniature schnauzer — gentle, cheeky, and the quiet inspiration behind everything here. You can read his story, and how this work began, on our About page." },
+      { q: "What is the HEART™ Framework?", a: "The HEART™ Companion Animal Care Framework is the foundation of everything we create. It recognises that caring for a companion animal is never a series of isolated events, but a lifelong relationship. HEART stands for five Hubs — Home & Belonging, Enrichment & Living Well, Ageing, Adaptation & Advocacy, Reflection, Remembrance & Returning, and Together, Through Every Stage. You can explore it in full on our HEART™ page." },
+      { q: "What is the COMPANIONS Scale™?", a: "The COMPANIONS Scale™ is a gentle tool to help you notice how your companion is doing as their needs change, so you can care for them thoughtfully and in partnership with your vet. It's one of the practical resources within the HEART™ approach." }
+    ]
+  },
+  {
+    key: 'resources',
+    title: 'Using Our Resources',
+    items: [
+      { q: 'Are your resources free?', a: "A little of both. We keep a range of guides and resources free, because we believe compassionate information should be within reach of everyone who needs it. We also offer some more in-depth premium resources and tools for those who'd like to go further, and these help sustain the work so we can keep creating and caring. Anything paid is always clearly marked, so you'll never be caught by surprise." },
+      { q: 'What animals do you support?', a: 'Companion animals of all kinds — dogs, cats, horses, birds, rabbits and other small companions, and more. Every species has its own needs, and many of our resources include species-specific guidance, but the HEART™ approach applies across the whole companion animal journey.' },
+      { q: 'Do I need an account to use the resources?', a: 'For our free resources, no account is needed — you can read and download them freely, and joining our email community is always optional. For paid digital products, you’ll go through a simple, secure checkout where we ask for a few details (such as your name and email) so we can deliver your download and send your receipt. Depending on the shop set-up, you may be able to check out as a guest or create an account to access your purchases again later.' },
+      { q: 'What information do you need when I buy a paid resource?', a: "When you purchase a paid digital product, you'll go through a secure checkout and we ask only for what's needed to complete and deliver your order, typically your name, email address and payment details. Payments are processed securely by a trusted third-party provider, and we don't store your full card details. You'll usually receive your download link straight away, with a copy by email. For how we handle your information, see our Privacy Policy; for purchase terms, see our Terms & Conditions and Refund Policy." }
+    ]
+  },
+  {
+    key: 'support',
+    title: 'Support, Guidance & Your Vet',
+    items: [
+      { q: 'Does Mr Levi’s Legacy™ provide veterinary or medical advice?', a: 'No. Mr Levi’s Legacy™ offers education, guidance and emotional support — not veterinary or medical advice. Our resources are designed to help you understand, prepare and advocate for your companion, always alongside your veterinarian. They are never a substitute for professional veterinary care. If your companion is unwell, or you have any concerns about their health, please speak with your vet.' },
+      { q: 'My companion needs urgent help — can you assist?', a: 'If your companion is unwell and needs urgent care, please contact your veterinarian or a local emergency clinic straight away. We’re here for guidance and support, but we can’t provide urgent or emergency veterinary help.' },
+      { q: 'Can you tell me whether it’s time to say goodbye?', a: "This is one of the hardest and most personal decisions any guardian faces, and it isn't one we can make for you. What we can offer is gentle guidance to help you notice how your companion is doing, including the COMPANIONS Scale™, so you can reflect with more clarity and make thoughtful decisions in partnership with your veterinarian, who knows your companion's health. You don't have to carry the question alone." },
+      { q: 'Can you give me advice about my specific animal?', a: 'You and your veterinarian, together, are the ones best placed to make decisions about your individual companion. You know them intimately — their character, their routines, the small daily changes — and your vet understands their health and history. That partnership is where the right choices are made, so it isn’t something we can advise on in your place. What we can do is support it: we provide general resources that apply right across the companion animal journey, alongside species-specific guidance for dogs, cats, horses, birds, rabbits and other companions, to help you feel more prepared, more confident and better able to advocate in those conversations.' },
+      { q: 'I’m grieving the loss of my companion. Can you help?', a: 'Yes — grief for a companion animal is real, and it deserves to be honoured. Our remembrance and legacy resources are here to walk beside you, and you’re always welcome to reach out. If your grief ever feels overwhelming, please also consider leaning on a trusted person, or a professional who can offer you personal support.' }
+    ]
+  },
+  {
+    key: 'privacy',
+    title: 'Your Privacy & Our Content',
+    items: [
+      { q: 'How is my personal information handled?', a: 'We take your privacy seriously. Any details you share, through our contact form or email sign-up, are used only to respond to you and to provide the resources and support you’ve asked for. For full details, please see our Privacy Policy.' },
+      { q: 'Can I share or reproduce your resources?', a: 'You’re warmly welcome to use our free resources for your own companions, and to share a link with others who might need them. Our guides, the HEART™ Framework, the COMPANIONS Scale™ and other materials remain the intellectual property of Mr Levi’s Legacy™, so please don’t reproduce, resell or republish them as your own. If you’d like to use anything in your work or organisation, just ask — see our Terms & Conditions or get in touch.' },
+      { q: 'Can I collaborate, partner or feature Mr Levi’s Legacy™ in the media?', a: 'We’d love to hear from you. Please reach out through our Contact page with collaboration or media enquiries.' }
+    ]
+  },
+  {
+    key: 'touch',
+    title: 'Staying in Touch',
+    items: [
+      { q: 'What happens when I join your email community?', a: 'When you join, you’ll be among the first to know when new guides and resources are published, along with occasional practical support and gentle guidance for caring through each stage of your companion’s life. We only email when we have something genuinely useful to share, never simply to fill your inbox, and you can unsubscribe at any time.' },
+      { q: 'How do I contact you?', a: 'You can reach us any time through our Contact page. I read every message personally and reply as soon as I can.' }
+    ]
+  }
+];
+
+class Component extends DCLogic {
+  state = { open: null };
+
+  toggle(id) {
+    this.setState(s => ({ open: s.open === id ? null : id }));
+  }
+
+  renderVals() {
+    const { open } = this.state;
+    const categories = FAQS.map(cat => ({
+      key: cat.key,
+      title: cat.title,
+      items: cat.items.map((it, i) => {
+        const id = cat.key + i;
+        const isOpen = open === id;
+        return {
+          key: id,
+          q: it.q,
+          a: it.a,
+          isOpen,
+          symbol: isOpen ? '−' : '+',
+          toggle: () => this.toggle(id)
+        };
+      })
+    }));
+    return { categories };
+  }
+}
+</script>
+</body>
+</html>
