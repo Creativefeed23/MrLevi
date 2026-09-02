@@ -107,7 +107,7 @@ Scale (all `clamp(min, fluid, max)`):
 ### Header (all pages)
 `position: sticky; top: 0; z-index: 40;` background `#F8F3EB`. Inner row max-width 1500px, padding `14px clamp(20px,3vw,40px)`, flex space-between, wraps.
 - Logo `assets/fig-logo.png`, height 96px, links home.
-- Nav (Karla 16px, colour `#0A2E52`): **Heart™** as a pill with `inset 0 0 0 1px rgba(212,166,78,0.45)` border, padding `14px 26px`, radius 999px (hover: border `#C99A45`); then About, Resources, Blog, Contact as plain links, padding `14px 18px` (hover `#0E4478`); then **Join us** solid pill `#0E4478` / white, padding `15px 24px` (hover `#0A2E52`).
+- Nav (Karla 16px, colour `#0A2E52`): **Heart™** as a pill with `inset 0 0 0 1px rgba(212,166,78,0.45)` border, padding `14px 26px`, radius 999px (hover: border `#C99A45`); then About, Resources, Blog, FAQ, Contact as plain links, padding `14px 18px` (hover `#0E4478`); then **Join us** solid pill `#0E4478` / white, padding `15px 24px` (hover `#0A2E52`).
 
 ### Newsletter band ("Walk beside us") — homepage, HEART, Resources, Blog
 Section background `#EDF1F5`, white card (24px radius, large-card shadow), padding `clamp(46px,5.4vw,84px) clamp(24px,4vw,60px)`, centred column.
