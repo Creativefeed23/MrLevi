@@ -5,6 +5,12 @@ Mr Levi's Legacy is a compassionate education and support site for people who ca
 
 `About v2.dc.html`, `FAQ v2.dc.html` and `Contact v2.dc.html` were added after the original four-page handoff, using client-supplied copy (About and FAQ) and the established design tokens, shared components and interaction patterns below. All cross-page links (nav, footer, homepage cards, the "Visit our FAQ" prompt) have been rewired to point at these pages instead of the placeholder `#story` / `#join` anchors used while they didn't exist yet.
 
+## Temporary Cloudflare preview
+This repo also deploys as a static preview on Cloudflare Workers (project name `mrlevi`), purely so the client can share a live link while the real build happens in WordPress/Elementor — `wrangler.jsonc` and the root `index.html` exist only for this and can be deleted once the WP site is live.
+- **Deploys from `main`** via Cloudflare's GitHub integration (Settings → Git repository on the Cloudflare dashboard) — a push to `main` should trigger an automatic rebuild.
+- **Manual fallback**: on the project's Deployments tab, "New deployment" opens a drag-and-drop upload (unrelated to the Git integration) — download the repo as a zip from GitHub and drop the unzipped contents in there if an automatic build doesn't fire.
+- If deploys stop firing on push, check the Settings tab for a "disconnected from your Git account" banner — reconnecting there (via "Manage" next to Git repository) is what fixed it the first time this happened.
+
 ## About the design files
 The `.dc.html` files in this bundle are **design references created in HTML** — prototypes showing intended look, copy and behaviour. They are not production code to copy directly. They use a small in-house runtime (`support.js`) with a custom `<x-dc>` template syntax; that runtime is **not** part of the deliverable.
 
