@@ -147,17 +147,20 @@ Purpose: explain the framework and its five Hubs.
 5. Newsletter band + footer.
 
 ### 3. Resources (`Resources v2.dc.html`)
-Purpose: list downloadable resources behind an email gate.
-1. Interior hero — eyebrow "FREE DOWNLOADS", h1 "Resources for every stage".
-2. **Resource grid** — cards (white, 21px radius, `0 0 26.2px 3px rgba(0,0,0,0.05)`, padding `26px 28px 28px`, `min-height: 272px`): a HEART-category pill (Karla 700, 12px, ls 1.2px, uppercase, tinted with that hub's colour), Fraunces 22px title (`#12304F`), 17.5px blurb (`#3D4A55`), and a footer row with the file type/size (PDF or XLS icon) and a download action.
-3. Newsletter band + footer.
+Purpose: list downloadable resources across two access tiers — genuinely free (no account) and member-only (free WordPress account required).
+1. Interior hero — eyebrow "GUIDES & DOWNLOADS", h1 "Resources for every stage", sub-line explaining the two tiers.
+2. An intro line above the grid spells out the tiers in plain language before the reader hits a single card.
+3. **Resource grid** — cards (white, 21px radius, `0 0 26.2px 3px rgba(0,0,0,0.05)`, padding `26px 28px 28px`, `min-height: 272px`): a HEART-category pill (Karla 700, 12px, ls 1.2px, uppercase, tinted with that hub's colour) paired with an access-level label (`Free · no login` in sage `#6F8266`, or `Members` in slate `#98A5AE`), Fraunces 22px title (`#12304F`), 17.5px blurb (`#3D4A55`), and a footer row with the file type icon (PDF or XLS) and a download action whose label switches between "Download" and "Log in to download".
+4. Newsletter band + footer.
 
-**Email gate (the key interaction).** Clicking any download opens a modal with three states:
-- `stepEmail` — h2 "One quick step", copy "Enter your email and we'll send a sign-in link…", email input (submits on Enter or button).
-- `stepSent` — roundel image, h2 "Check your inbox", "We've sent a sign-in link to **{email}**", and a gold 13.5px status line "Waiting for the link to be opened…".
-- `stepDone` — a 64px green-tinted circle (`rgba(147,163,137,0.18)` fill, `#6F8266` tick), h2 "You're signed in", "This device will remember you…", and a navy `#21447B` button that starts the pending download.
+**Access tiers.** This was a deliberate call, not a technical default: resources someone might need in a crisis — an emergency care plan, the Quality of Life Scale, comfort-care guidance, grief support, an emergency contact sheet — are free with no account at all, so nothing stands between a guardian and help in an urgent moment. Everything else (the "First 30 days", trackers, enrichment guides, reflection tools, etc.) sits behind a free membership. **Which specific resources landed in which tier is a starting proposal** — flag any you want moved before this goes live; it's a one-line change per resource (the `free: true/false` flag in the `RESOURCES` array).
 
-Production behaviour: passwordless magic link. On submit, POST the email, send a one-time signed link; opening it sets a long-lived cookie/session so return visits skip straight to download. State needed: `open`, `step` (`email|sent|done`), `email`, `pendingResource`, plus a persisted `verified` flag. Validate email format before enabling submit; show an inline error on failure. The prototype simulates verification on a timer — replace with real polling or a redirect back from the emailed link.
+**Member gate (the key interaction).** Clicking a free resource downloads immediately, no modal. Clicking a member resource while signed out opens a modal with three states:
+- `viewLogin` — h2 "Welcome back", email + password fields, a "New here? Create a free account →" link into `viewRegister`.
+- `viewRegister` — h2 "Create your free account", name + email + password fields, a "Already a member? Log in →" link back to `viewLogin`.
+- `viewSuccess` — a 64px green-tinted circle (`rgba(147,163,137,0.18)` fill, `#6F8266` tick), h2 "Welcome, {name}" (or "You're signed in" for a returning login), "This device will remember you…", and a navy `#21447B` button that starts the pending download.
+
+Production behaviour: standard WordPress accounts (`wp_insert_user()`, Subscriber role) — not a magic link. Register/login should hit WordPress's own auth (e.g. via the REST API or a lightweight AJAX handler), not a third-party service; on success set the normal WP logged-in cookie so the browser (and its password manager) carries the session on return visits, same as any other WP login. State needed client-side: `authView` (`login|register|success|null`), the pending resource, and a signed-in flag — the prototype simulates this with `localStorage`, which the real build replaces with checking the actual WP session. Validate email format and password length before enabling submit; show an inline error on failure.
 
 ### 4. Blog (`Blog v2.dc.html`)
 Purpose: browse articles by HEART category.
@@ -237,10 +240,11 @@ For production, serve WebP/AVIF with JPEG fallback and add `srcset` for the hero
 | `assets/` | All images and icons |
 
 ## Outstanding before launch
-1. Magic-link authentication + email capture plugin integration.
-2. Real resource list and real blog posts (current titles and copy are representative).
-3. Confirm whether New Spirit will be licensed for display type.
-4. Shop is "coming soon" — the card is a placeholder with no destination.
-5. Contact form has no backend — wire it to real email delivery (see **Interactions & behaviour**).
-6. Privacy Policy, Terms & Conditions and Refund Policy pages are referenced (FAQ page, footer) but not yet designed — the FAQ page leaves those mentions as plain text until they exist.
-7. About page's four unbriefed image placements were filled with existing `assets/` photography as placeholders — confirm with the client whether those choices should be swapped.
+1. WordPress member accounts (name/email/password, Subscriber role) wired to real registration/login — see **Access tiers** under Resources. Membership itself is free for now; a paid tier via WooCommerce checkout is a later phase, not this one.
+2. Confirm the free-vs-member split on the Resources page — the `RESOURCES` array's `free` flags are a proposed starting point, not a final content decision.
+3. Real resource list and real blog posts (current titles and copy are representative).
+4. Confirm whether New Spirit will be licensed for display type.
+5. Shop is "coming soon" — the card is a placeholder with no destination.
+6. Contact form has no backend — wire it to real email delivery (see **Interactions & behaviour**).
+7. Privacy Policy, Terms & Conditions and Refund Policy pages are referenced (FAQ page, footer) but not yet designed — the FAQ page leaves those mentions as plain text until they exist.
+8. About page's four unbriefed image placements were filled with existing `assets/` photography as placeholders — confirm with the client whether those choices should be swapped.
